@@ -2,23 +2,28 @@ header {
     position: fixed;
     top:0;
     left:0;
-    height:20%;
+    height:15%;
     width:100%;
   }
 
-  main {
-    position:fixed;
-    top:20%;
-    left:0;
-    height:80%;
-    width:100%;
-  }
+  #mainTab {
+    position:relative;
+    height:100%
+  };
 
   #headerTabs {
     position:fixed;
     top: 15%;
-    height: 5%;
+    height: 48px;
     width: 100%;
+  }
+
+  main {
+    position:fixed;
+    top:15%;
+    left:0;
+    height:85%;
+    width:100%;
   }
 
   #headerBackground {
@@ -30,6 +35,18 @@ header {
     background-size: cover;
     opacity:50%;
   }
+
+  #headerNamesMobile {
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    color:rgb(119, 104, 16);
+    font-size:8vh;
+    position:fixed;
+    left:5%;
+    width:90%;
+    height:15%;
+    text-align: center;
+    padding-top: 5%;
+  };
 
   #headerNames {
     font-family: 'Brush Script MT', 'Brush Script Std', cursive;
