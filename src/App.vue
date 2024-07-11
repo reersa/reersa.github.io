@@ -42,7 +42,7 @@ function isMobile() {
 
 <template>
   <header>
-    <div id="headerBackground"></div>
+    <img id="headerBackground" src="@/headerPicture.jpg"/>
     <span id="headerNames">Aaron & Falon</span>
   </header>
   <main>
@@ -51,7 +51,7 @@ function isMobile() {
           <Tab v-for="tab in tabs" @click="SelectTab(tab);" style="width:100%" :key="tab.title" :value="tab.value">{{ tab.title }}</Tab>
       </TabList>
     </Tabs>
-    <div style="background-color:blue">
+    <div>
       <div v-if="selectedTab == 0">
         <span>Home</span>
       </div>
