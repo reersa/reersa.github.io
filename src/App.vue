@@ -54,7 +54,7 @@ function isMobile() {
     </Tabs>
     <div>
       <div v-if="selectedTab == 0">
-        <span>Home</span>
+        <span>HomeHome</span>
       </div>
       <div v-if="selectedTab == 1">
         <span>Our Story</span>
