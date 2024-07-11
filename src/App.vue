@@ -42,7 +42,6 @@ function isMobile() {
 
 <template>
   <header>
-    <meta name="color-scheme" content="light only">
     <img id="headerBackground" src="@/headerPicture.jpg"/>
     <span id="headerNames">Aaron & Falon</span>
   </header>
@@ -54,7 +53,7 @@ function isMobile() {
     </Tabs>
     <div>
       <div v-if="selectedTab == 0">
-        <span>HomeHome</span>
+        <span>Home</span>
       </div>
       <div v-if="selectedTab == 1">
         <span>Our Story</span>
