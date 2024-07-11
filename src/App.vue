@@ -41,41 +41,38 @@ function isMobile() {
 </script>
 
 <template>
-  <div>
-    <header>
-      <div id="headerBackground"></div>
-      <span v-if="isMobile() & isPortrait()" id="headerNamesMobile">Aaron & Falon</span>
-      <span v-else id="headerNames">Aaron & Falon</span>
-    </header>
-    <main>
-      <Tabs id="headerTabs" value=0 scrollable=true>
-        <TabList>
-            <Tab v-for="tab in tabs" @click="SelectTab(tab);" style="width:100%" :key="tab.title" :value="tab.value">{{ tab.title }}</Tab>
-        </TabList>
-      </Tabs>
-      <div id="mainTab">
-        <div v-if="selectedTab == 0">
-          <span>Home</span>
-        </div>
-        <div v-if="selectedTab == 1">
-          <span>Our Story</span>
-        </div>
-        <div v-if="selectedTab == 2">
-          <span>Photos</span>
-        </div>
-        <div v-if="selectedTab == 3">
-          <span>Ceremony Details</span>
-        </div>
-        <div v-if="selectedTab == 4">
-          <span>Travel/Hotel</span>
-        </div>
-        <div v-if="selectedTab == 5">
-          <span>Registry</span>
-        </div>
-        <div v-if="selectedTab == 6">
-          <span>FAQ</span>
-        </div>
+  <header>
+    <div id="headerBackground"></div>
+    <span id="headerNames">Aaron & Falon</span>
+  </header>
+  <main>
+    <Tabs id="headerTabs" value=0 scrollable=true>
+      <TabList>
+          <Tab v-for="tab in tabs" @click="SelectTab(tab);" style="width:100%" :key="tab.title" :value="tab.value">{{ tab.title }}</Tab>
+      </TabList>
+    </Tabs>
+    <div>
+      <div v-if="selectedTab == 0">
+        <span>Home</span>
       </div>
-    </main>
-  </div>
+      <div v-if="selectedTab == 1">
+        <span>Our Story</span>
+      </div>
+      <div v-if="selectedTab == 2">
+        <span>Photos</span>
+      </div>
+      <div v-if="selectedTab == 3">
+        <span>Ceremony Details</span>
+      </div>
+      <div v-if="selectedTab == 4">
+        <span>Travel/Hotel</span>
+      </div>
+      <div v-if="selectedTab == 5">
+        <span>Registry</span>
+      </div>
+      <div v-if="selectedTab == 6">
+        <span>FAQ</span>
+      </div>
+    </div>
+  </main>
 </template>
