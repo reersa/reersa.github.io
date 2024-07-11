@@ -51,7 +51,7 @@ function isMobile() {
           <Tab v-for="tab in tabs" @click="SelectTab(tab);" style="width:100%" :key="tab.title" :value="tab.value">{{ tab.title }}</Tab>
       </TabList>
     </Tabs>
-    <div>
+    <div style="background-color:red">
       <div v-if="selectedTab == 0">
         <span>Home</span>
       </div>
