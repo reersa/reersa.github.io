@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "predeploy": "npm run build && echo www.caughttheone.com > dist/CNAME && git add --all && git commit -m 'FIX' && git push",
+    "predeploy": "npm run build && echo www.caughttheone.com > dist/CNAME && git add --all && git commit -m 'FIX'",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
