@@ -30,7 +30,6 @@ header {
   width: 100%;
   background-image: url("@/headerPicture.jpg");
   background-size: cover;
-  opacity: 50%;
 }
 
 #headerNames {
