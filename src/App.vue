@@ -42,6 +42,7 @@ function isMobile() {
 
 <template>
   <header>
+    <meta name="color-scheme" content="light only">
     <img id="headerBackground" src="@/headerPicture.jpg"/>
     <span id="headerNames">Aaron & Falon</span>
   </header>
