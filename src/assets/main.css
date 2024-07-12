@@ -119,10 +119,15 @@ main {
   justify-content: space-evenly;
 }
 
-#sablewoodPicture {
-  object-fit: cover;
+#sablewoodPictureLink {
   width:50vw;
   height:40%;
+}
+
+#sablewoodPicture {
+  object-fit: cover;
+  width:100%;
+  height:100%;
   margin-top: 5vh;
   border-radius: 5vh;
 }
@@ -143,5 +148,20 @@ main {
   }
   #homeLoc {
     font-size:8vmin;
+  }
+  .divRow {
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+  }
+  #sablewoodPictureLink {
+    width:80vw;
+    height:40vh;
+  }
+  #sablewoodPicture {
+    object-fit: cover;
+    margin-top: 0;
+    margin-left:10%;
+    border-radius: 5vh;
   }
 }

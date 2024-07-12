@@ -63,7 +63,7 @@ function isMobile() {
             <span class="fancy indigo">Schoharie, NY</span>
           </div>
         </div>
-        <a href="https://thesablewood.com/" target="_blank"><img id="sablewoodPicture" src="@/sablewood.jpg"></a>
+        <a id="sablewoodPictureLink" href="https://thesablewood.com/" target="_blank"><img id="sablewoodPicture" src="@/sablewood.jpg"></a>
       </div>
     </div>
     <div v-if="selectedTab == 1">
