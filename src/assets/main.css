@@ -16,6 +16,14 @@ body div {
   width: 100%;
 }
 
+.fancy {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.indigo {
+  color:rgb(149, 145, 231);
+}
+
 header {
   display: flex;
   position: relative;
@@ -35,7 +43,6 @@ header {
 }
 
 #headerNames {
-  font-family: Brush Script MT, Brush Script Std, cursive;
   color: #776810;
   z-index: 1;
   font-size: 10vh;
@@ -58,4 +65,83 @@ main {
 
 #headerTabs {
   height: 48px;
+}
+
+#homeTab {
+  overflow-y: scroll;
+}
+
+#homeDateLoc {
+  margin:5vh;
+  border-style: solid;
+  border-color: rgba(128, 128, 128, 0.1);
+  height:40%;
+  width:40vmin;
+  border-radius: 2em;
+  box-shadow: 0.5em 0.5em 2em rgba(128, 128, 128, 0.4), -0.5em -0.5em 2em rgba(128, 128, 128, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#homeDateLocHeader {
+  font-size:4vmin;
+  padding-top: 0.2em;
+  letter-spacing: 0.25em;
+  padding-left: .75em;
+  margin-left: 5%;
+}
+
+#homeDateLocFancyUnderline {
+  width:20vmin;
+  object-fit:fill;
+  height:10%;
+  padding-left: 1em;
+  margin-left: 5%;
+}
+
+#homeDate {
+  font-size:4vmin;
+  width:100%;
+  padding-left:5%;
+  padding-top:0.2em;
+}
+
+#homeLoc {
+  font-size:4vmin;
+  width:100%;
+  padding-left:5%;
+}
+
+.divRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#sablewoodPicture {
+  object-fit: cover;
+  width:50vw;
+  height:40%;
+  margin-top: 5vh;
+  border-radius: 5vh;
+}
+
+@media (max-width: 500px) {
+  #homeDateLoc {
+    width:80vw;
+    height:60vw;
+  }
+  #homeDateLocHeader {
+    font-size: 8vmin;
+  }
+  #homeDateLocFancyUnderline {
+    width:40vmin;
+  }
+  #homeDate {
+    font-size:8vmin;
+  }
+  #homeLoc {
+    font-size:8vmin;
+  }
 }
